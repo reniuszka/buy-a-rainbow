@@ -193,6 +193,15 @@ img {
   text-align: center;
 }
 
+.submit {
+  width: 90%;
+  margin: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
 .cart__button {
   max-height: 48px;
   justify-self: flex-end;

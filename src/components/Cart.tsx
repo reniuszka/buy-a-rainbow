@@ -12,13 +12,22 @@ const Cart = () => {
     setConfirm(true);
   };
 
+  const imageSubmit: string = new URL(`../images/item0005.jpg`, import.meta.url)
+    .href;
+
   const pageContent = confirm ? (
-    <h2>
-      {" "}
-      Yeah we know you would like to buy rainbows but..their price is priceless!
-      go for a walk or hike and look at the sky, hopefully you will fin what you
-      need. Rainbow&&Love!
-    </h2>
+    <section className="submit">
+      <h3>
+        Yeah we know you would like to buy rainbows but..their price is
+        priceless!
+      </h3>
+      <h4>
+        go for a walk or hike and look at the sky, hopefully you will fin what
+        you need.
+      </h4>
+      <h5> Rainbow&Love!</h5>
+      <img src={imageSubmit} alt="rainbow" className="product__img" />
+    </section>
   ) : (
     <section className="cart__section">
       <h2 className="offscreen">Cart</h2>
